@@ -1,6 +1,7 @@
 package com.example.shopapp
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,6 +33,12 @@ class TransactionAdapter(private var transactions: List<Transaction>) : Recycler
             holder.amount.setTextColor(ContextCompat.getColor(Context, R.color.red))
         }
         holder.label.text = transaction.label
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context , DetailedActivity::class.java )
+            intent.putExtra("transaction", transaction)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {
