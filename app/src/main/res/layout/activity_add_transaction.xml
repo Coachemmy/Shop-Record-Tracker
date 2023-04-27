@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple_700"
     tools:context=".AddTransactionActivity">
     
     <ImageButton
@@ -11,7 +12,7 @@
         android:layout_width="34dp"
         android:layout_height="34dp"
         android:layout_margin="12dp"
-        android:background="@drawable/close_bg"
+        android:background="@drawable/close_bg241"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     
@@ -29,6 +30,7 @@
             style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+           android:textColorHint="@color/white"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
             android:hint="label"
@@ -39,6 +41,8 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/label_selector"
                 android:drawablePadding="12dp"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
                 android:maxLines="1"
                 android:inputType="text"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -49,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
+            android:textColorHint="@color/white"
             android:layout_marginEnd="12dp"
             android:hint="amount"
             app:errorEnabled="true">
@@ -58,6 +63,8 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/money_selector"
                 android:drawablePadding="12dp"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
                 android:maxLines="1"
                 android:inputType="numberDecimal|numberSigned"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -67,6 +74,7 @@
             style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
             android:hint="description"
@@ -75,6 +83,8 @@
                 android:id="@+id/descriptionInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableTint="@color/white"
+                android:textColor="@color/white"
                 android:drawableStart="@drawable/description_selector"
                 android:drawablePadding="12dp"
                 android:maxLines="1"
@@ -89,8 +99,9 @@
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
             android:padding="12dp"
-            android:textColor="@android:color/white"
-            android:background="@color/green"/>
+            android:textColor="@color/purple_700"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

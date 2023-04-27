@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:id="@+id/rootView"
     android:layout_height="match_parent"
-    tools:context=".DetailedActivity">
+    android:textColorHint="@color/white"
+    tools:context=".DetailedActivity"
+    android:background="@color/purple_700">
 
     <ImageButton
         android:id="@+id/closeBtn"
         android:layout_width="34dp"
-        android:layout_height="34dp"
+        android:layout_height="37dp"
         android:layout_margin="12dp"
-        android:background="@drawable/close_bg"
+        android:background="@drawable/close_bg241"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -33,7 +35,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
-            android:hint="Label"
+            android:hint="Product"
+            android:textColorHint="@color/white"
             app:boxStrokeWidth="0dp"
             app:errorEnabled="true">
 
@@ -42,6 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawablePadding="12dp"
+                android:textColor="@color/white"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textSize="24sp" />
@@ -55,6 +59,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
             android:hint="Amount"
+            android:textColorHint="@color/white"
             app:boxStrokeWidth="0dp"
             app:errorEnabled="true">
 
@@ -62,8 +67,8 @@
                 android:id="@+id/amountInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/money_selector"
                 android:drawablePadding="12dp"
+                android:textColor="@color/white"
                 android:inputType="numberDecimal|numberSigned"
                 android:maxLines="1"
                 android:textSize="24sp" />
@@ -77,6 +82,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginEnd="12dp"
             android:hint="Description"
+            android:textColorHint="@color/white"
             app:boxStrokeWidth="0dp"
             app:errorEnabled="true">
 
@@ -86,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:drawablePadding="12dp"
                 android:inputType="text"
+                android:textColor="@color/white"
                 android:maxLines="1"
                 android:textSize="24sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -98,11 +105,10 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/green"
         android:padding="10dp"
         android:text="Update Product"
         android:layout_margin="10dp"
-        android:textColor="@android:color/white"
+        android:textColor="@color/purple_700"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

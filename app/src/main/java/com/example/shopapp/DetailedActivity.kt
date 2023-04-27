@@ -50,6 +50,7 @@ class DetailedActivity : AppCompatActivity() {
                 labelLayout.error = null
         }
 
+
         amountInput.addTextChangedListener {
             updateBtn.visibility = View.VISIBLE
             if (it!!.isNotEmpty())

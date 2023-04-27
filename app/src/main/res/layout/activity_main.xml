@@ -4,6 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/purple_700"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -25,6 +26,7 @@
                 android:layout_height="wrap_content"
                 android:text="Total Balance"
                 android:textAllCaps="true"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
 
@@ -33,6 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$500"
+                android:textColor="@color/white"
                 android:textSize="32sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -104,6 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Transactions"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="14sp"
             android:textAllCaps="true"
@@ -115,6 +119,7 @@
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/white"
             android:layout_below="@+id/recyclerview_title"
             android:layout_margin="10dp"/>
 
@@ -125,9 +130,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
             android:src="@drawable/add_24"
-            android:backgroundTint="@color/red"
+            android:backgroundTint="@color/purple_700"
             app:tint="@color/white"
             app:borderWidth="0dp"/>
 

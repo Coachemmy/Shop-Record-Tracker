@@ -13,4 +13,15 @@
     <color name="green">#1CAA22</color>
     <color name="red">#E53935</color>
     <color name="textMain">#292929</color>
+
+    <color name="app_theme">#009dff</color>
+    <color name="app_theme_light">#f6fbff</color>
+    <color name="edit_text_border">#03a9f4</color>
+    <color name="edit_text_background">#f6fbff</color>
+
+    <color name="background">#F0f4f3</color>
+    <color name="statusbar">#50c2c9</color>
+
+    <color name="forgotpassword">#50c2c9</color>
+    <color name="signup">#134b4f</color>
 </resources>
